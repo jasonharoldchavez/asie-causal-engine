@@ -88,7 +88,7 @@ class VerifiableASIEPipeline:
             "predictions": predictions.tolist(),
             "invariance_score": float(invariance_score),
             "matrix_semantics": "predictive_associations_not_identified_causal_effects",
-            "matrix_orientation": "C[target, source]",
+            "matrix_orientation": "C[source, target] (legacy orientation until the predictor patch is merged)",
         }
         value_bytes = json.dumps(
             event_payload, sort_keys=True, separators=(",", ":"), allow_nan=False
