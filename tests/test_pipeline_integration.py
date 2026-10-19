@@ -28,7 +28,6 @@ class PipelineIntegrationTests(unittest.IsolatedAsyncioTestCase):
                 "max_lags": 2,
                 "latent_factors": 0,
                 "epochs": 1,
-                "random_state": 17,
             },
         )
         await self.pipeline.initialize()
